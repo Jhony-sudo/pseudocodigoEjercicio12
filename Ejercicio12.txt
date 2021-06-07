@@ -1,0 +1,30 @@
+Algoritmo Ej12
+	AlturaM = 0 
+	AlturaH = 0
+	EdadPro  = 0
+	ContaM = 0
+	ContaH = 0
+	Hacer
+		Escribir "Sexo M o F "
+		Leer Genero 
+		Escribir "Ingrese la edad "
+		Leer Edad 
+		Escribir "Ingrse la altura en m"
+		Leer Altura
+		
+		Si Genero = "F"
+			AlturaM = AlturaM + Altura
+			ContaM = ContaM + 1
+		FinSi
+		Si Genero = "M"
+			AlturaH = AlturaH + Altura
+			ContaH  = ContaH + 1
+			
+		FinSi
+		EdadPro = EdadPro + Edad
+	Hasta Que Altura < 0 
+	Escribir "Promedio altura de mujeres: " AlturaM/ContaM
+	Escribir "Promedio altura de hombres: " AlturaH/ContaH
+	Escribir "La edad promedio es de  " EdadPro/(ContaH+ContaM) "Anios"
+	
+FinAlgoritmo
